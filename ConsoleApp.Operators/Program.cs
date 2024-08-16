@@ -62,7 +62,7 @@ Console.WriteLine("*****End Logical Results*****\n\n");
 
 // int randomValue = 5;
 // int increaseValue = num1 + 5
-Console.WriteLine("Enter Random Value for Assignment Operations: ");
+Console.Write("Enter Random Value for Assignment Operations: ");
 int randomValue = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("*****Assignment Results*****");
