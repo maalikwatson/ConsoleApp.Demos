@@ -16,36 +16,44 @@ else
 }
 
 
+
+/*
+ * A: 86 - 100
+ * B: 75 - 85
+ * C: 65 - 74
+ * D: 50 - 64
+ * F: < 50
+ */
 Console.WriteLine("***** Simple IF Results End *****\n\n");
 
 Console.WriteLine("***** Complex IF...ELSE...IF Results *****");
 
-if (grade < 50)
+if (grade < 0 || grade > 100)
 {
-    Console.WriteLine("Student has failed -- F");
+    Console.WriteLine("Invalid Grade Entry");
 }
-else if (grade == 65)
+else if (grade <= 100 && grade >= 86)
 {
-    Console.WriteLine("C+");
+    Console.WriteLine("A");
 }
-else if (grade == 75)
+else if (grade <= 85 && grade >= 75)
 {
     Console.WriteLine("B");
 }
-else if (grade == 85)
+else if (grade <= 74 && grade >= 65)
 {
-    Console.WriteLine("B+");
+    Console.WriteLine("C");
 }
-else
+else if (grade <= 64 && grade >= 50)
 {
-    Console.WriteLine("A -- Good Job!");
+    Console.WriteLine("D");
 }
-
-
+else if (grade <= 50) 
+{
+    Console.WriteLine("F");
+}
 
 Console.WriteLine("***** Complex IF...ELSE...IF Results End *****");
-
-
 Console.WriteLine("Thank you for using this program!");
 
 
