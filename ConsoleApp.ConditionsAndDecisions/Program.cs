@@ -1,4 +1,5 @@
 ﻿// Prompt for input
+
 Console.Write("Please enter student's grade: ");
 int grade = Convert.ToInt32(Console.ReadLine());
 
@@ -27,6 +28,7 @@ else
 Console.WriteLine("***** Simple IF Results End *****\n\n");
 
 Console.WriteLine("***** Complex IF...ELSE...IF Results *****");
+// Decide to print letter grade based on user input
 
 if (grade < 0 || grade > 100)
 {
@@ -56,6 +58,70 @@ else if (grade <= 50)
 Console.WriteLine("***** Complex IF...ELSE...IF Results End *****");
 Console.WriteLine("Thank you for using this program!");
 
+// Ternary operator -- Used to assign a value to a variable based on a condition
+Console.WriteLine("***** Ternary Operator Result *****");
+string passStatus = grade < 50 ? "Fail" : "Pass";
+Console.WriteLine($"Student Status is: {passStatus}");
 
+Console.WriteLine("***** Ternary Operator Result End *****");
+
+
+Console.WriteLine("***** Switch Statements *****");
+/* 
+
+Console.WriteLine("What day of the week is it?");
+Console.WriteLine("1 -- Sunday");
+Console.WriteLine("2 -- Monday");
+Console.WriteLine("3 -- Tuesday");
+Console.WriteLine("4 -- Wednesday (Hump Day!)");
+Console.WriteLine("5 -- Thursday");
+Console.WriteLine("6 -- Friday");
+Console.WriteLine("7 -- Saturday (Beach Day!!!)");
+
+int dayOfWeek = Convert.ToInt32(Console.ReadLine());
+
+if (dayOfWeek == 1)
+{
+    Console.WriteLine("Today is Sunday");
+}
+else if (dayOfWeek == 2)
+{
+    Console.WriteLine("Today is Monday");
+}
+else if (dayOfWeek == 3)
+{
+    Console.WriteLine("Today is Tuesday");
+}
+else if (dayOfWeek == 4)
+{
+    Console.WriteLine("Today is Wednesday (Hump Day!)");
+}
+else if (dayOfWeek == 5)
+{
+    Console.WriteLine("Today is Thursday");
+}
+else if (dayOfWeek == 6)
+{
+    Console.WriteLine("Today is Friday");
+}
+else if (dayOfWeek == 7)
+{
+    Console.WriteLine("Today is Saturday (Beach Day!!!)");
+}
+*/
+
+int dayOfWeek = Convert.ToInt32(Console.ReadLine());
+switch (dayOfWeek)
+{
+    case 1:
+        Console.WriteLine("Sunday");
+        // more code
+        // more code
+        break;
+}
+
+Console.WriteLine("***** Switch Statements End *****");
+
+Console.WriteLine("Thank you for using this program!");
 
 Console.ReadKey();
